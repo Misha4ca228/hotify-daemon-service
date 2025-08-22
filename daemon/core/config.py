@@ -1,0 +1,21 @@
+NODE_ID = 1
+PROFIT = 0.2
+
+
+RABBIT_USER = "misha4ca228"
+RABBIT_PASS = "Timeset1000"
+RABBIT_HOST = "147.45.228.100"
+RABBIT_URL = f"amqp://{RABBIT_USER}:{RABBIT_PASS}@{RABBIT_HOST}/"
+QUEUE_NAME = "sd_gen_queue"
+
+DB_USER = "bot"
+DB_PASS = "d982fh2kdsnm9c"
+DB_NAME = "database"
+DB_IP = "82f2d4af053d398238ef6db2.twc1.net"
+DATABASE_URL = f"postgresql+asyncpg://{DB_USER}:{DB_PASS}@{DB_IP}:5432/{DB_NAME}"
+
+S3_ENDPOINT = "https://s3.twcstorage.ru"
+S3_ACCESS_KEY = "BRTF7U6HKNLMMGRLDJVN"
+S3_SECRET_ACCESS_KEY = "WlhvZNheQXUB83TLzE2lIHdKn2B3VD7BfVx6GQua"
+S3_REGION = "ru-1"
+
