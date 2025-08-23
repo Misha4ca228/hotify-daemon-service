@@ -41,11 +41,13 @@ async def main():
 
                     async with sessionmaker() as session:
                         logger.info("Start Generation")
+
                         start_processing = time.time()
                         task = await get_task(session=session, task_id=task_id)
                         dialog = await get_dialog_by_user_id(session=session, user_id=int(task.user_id))
                         character = await get_character_by_id(session, dialog.character_id)
                         node = await get_node(session, cfg.NODE_ID)
+                        logger.info(f"User ID: {task.user_id}")
 
                         if task.image_args:
                             function_args = task.image_args
