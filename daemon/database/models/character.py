@@ -5,6 +5,8 @@ from enum import Enum
 class CharacterType(Enum):
     FREE = "FREE"
     PAID = "PAID"
+    CREATE = "CREATE"
+    USER_CHARACTER = "USER_CHARACTER"
 
 
 
